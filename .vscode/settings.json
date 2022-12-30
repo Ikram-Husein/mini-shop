@@ -1,0 +1,5 @@
+{
+  "css.validate": false,
+  "json.validate.enable": false,
+  "tailwindCSS.emmetCompletions": true
+}

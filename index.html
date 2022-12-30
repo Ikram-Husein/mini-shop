@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--======== favicon ========-->
+		<link rel="shortcut icon" href="🔴Change_me" />
+		<!--======== Icon Links ========-->
+		<!-- font awsome -->
+		<script
+			src="https://kit.fontawesome.com/c197637d72.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- ion icon -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+
+		<!--======== css file ========-->
+		<link rel="stylesheet" href="assets/css/tailwind.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
+
+		<!--======== Website Title ========-->
+		<title>shop page</title>
+	</head>
+	<body class="font-poppins">
+		<!-- container -->
+		<div class="container">
+			<!-- content -->
+			<div class="">
+				<!-- breadcump -->
+				<div class="flex items-center gap-x-2 py-4 text-lg">
+					<!-- icon -->
+					<ion-icon name="home" class="text-rose-500"></ion-icon>
+					<ion-icon
+						name="chevron-forward-outline"
+						class="text-gray-400"
+					></ion-icon>
+					<p class="font-medium text-gray-700">Shop</p>
+				</div>
+
+				<!-- product details/filters -->
+				<div class="flex gap-x-6">
+					<!-- sidebar -->
+					<div class="w-[310px] select-none tab:hidden mob:hidden">
+						<!-- sidebar container -->
+						<div>
+							<!-- sidebar content -->
+							<div class="rounded-md border-[1px] border-gray-200 p-5">
+								<!-- sidebar background -->
+								<!-- filter-1: categories -->
+								<div class="space-y-3 border-b-[1px] border-b-gray-200">
+									<h2 class="text-[22px] font-medium">Categories</h2>
+									<!-- categories list -->
+									<div class="space-y-2 pb-6">
+										<div class="flex items-center gap-x-3 text-gray-500">
+											<input
+												type="checkbox"
+												name=""
+												id="l1"
+												class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+											/>
+											<label for="l1">Bedroom</label>
+											<div class="ml-auto">(15)</div>
+										</div>
+										<div class="flex items-center gap-x-3 text-gray-500">
+											<input
+												type="checkbox"
+												name=""
+												id="l2"
+												class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+											/>
+											<label for="l2">Sofa</label>
+											<div class="ml-auto">(50)</div>
+										</div>
+										<div class="flex items-center gap-x-3 text-gray-500">
+											<input
+												type="checkbox"
+												name=""
+												id="l3"
+												class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+											/>
+											<label for="l3">Chair</label>
+											<div class="ml-auto">(37)</div>
+										</div>
+										<div class="flex items-center gap-x-3 text-gray-500">
+											<input
+												type="checkbox"
+												name=""
+												id="l4"
+												class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+											/>
+											<label for="l4">Headphone</label>
+											<div class="ml-auto">(108)</div>
+										</div>
+									</div>
+								</div>
+								<!-- filter-2: Brands -->
+								<div class="space-y-3 border-b-[1px] border-b-gray-200 pt-5">
+									<h2 class="text-[22px] font-medium">Brands</h2>
+									<!-- Brands list -->
+									<div class="space-y-2 pb-6">
+										<div class="flex items-center gap-x-3 text-gray-500">
+											<input
+												type="checkbox"
+												name=""
+												id="l5"
+												class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+											/>
+											<label for="l5">Samsung</label>
+											<div class="ml-auto">(15)</div>
+										</div>
+										<div class="flex items-center gap-x-3 text-gray-500">
+											<input
+												type="checkbox"
+												name=""
+												id="l6"
+												class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+											/>
+											<label for="l6">Realme</label>
+											<div class="ml-auto">(50)</div>
+										</div>
+										<div class="flex items-center gap-x-3 text-gray-500">
+											<input
+												type="checkbox"
+												name=""
+												id="l7"
+												class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+											/>
+											<label for="l7">Asus</label>
+											<div class="ml-auto">(37)</div>
+										</div>
+										<div class="flex items-center gap-x-3 text-gray-500">
+											<input
+												type="checkbox"
+												name=""
+												id="l8"
+												class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+											/>
+											<label for="l8">MSI</label>
+											<div class="ml-auto">(108)</div>
+										</div>
+										<div class="flex items-center gap-x-3 text-gray-500">
+											<input
+												type="checkbox"
+												name=""
+												id="l9"
+												class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+											/>
+											<label for="l9">Apple</label>
+											<div class="ml-auto">(108)</div>
+										</div>
+									</div>
+								</div>
+								<!-- filter-3: Pricing -->
+								<div class="space-y-3 border-b-[1px] border-b-gray-200 pt-5">
+									<h2 class="text-[22px] font-medium">Pricing</h2>
+									<!-- Pricing forms -->
+									<div class="flex items-center gap-x-3 pb-6">
+										<input
+											type="text"
+											name="number"
+											placeholder="min"
+											class="w-full rounded-sm border-gray-400 px-[5px] py-[3px] text-sm focus:border-rose-500 focus:ring-rose-500"
+										/>
+										<span class="text-gray-500">-</span>
+										<input
+											type="text"
+											name="number"
+											placeholder="max"
+											class="w-full rounded-sm border-gray-400 px-[5px] py-[3px] text-sm focus:border-rose-500 focus:ring-rose-500"
+										/>
+									</div>
+								</div>
+								<!-- filter-3: Sizing -->
+								<div
+									class="sizing_parent space-y-3 border-b-[1px] border-b-gray-200 pt-5"
+								>
+									<h2 class="text-[22px] font-medium">Pricing</h2>
+									<!-- sizing inputs -->
+									<div class="flex items-center space-x-2 pb-6">
+										<div>
+											<input
+												type="radio"
+												name="size_filter"
+												id="s1"
+												class="peer/size hidden"
+											/>
+											<label
+												for="s1"
+												class="sizing_btn flex h-[30px] w-[30px] cursor-pointer select-none items-center justify-center rounded-sm border-[1px] p-[2px] text-gray-400 peer-checked/size:border-transparent peer-checked/size:bg-rose-500 peer-checked/size:text-white"
+												>XS</label
+											>
+										</div>
+										<div>
+											<input
+												type="radio"
+												name="size_filter"
+												id="s2"
+												class="peer/size hidden"
+											/>
+											<label
+												for="s2"
+												class="sizing_btn flex h-[30px] w-[30px] cursor-pointer select-none items-center justify-center rounded-sm border-[1px] p-[2px] text-gray-400 peer-checked/size:border-transparent peer-checked/size:bg-rose-500 peer-checked/size:text-white"
+												>M</label
+											>
+										</div>
+										<div>
+											<input
+												type="radio"
+												name="size_filter"
+												id="s3"
+												class="peer/size hidden"
+											/>
+											<label
+												for="s3"
+												class="sizing_btn flex h-[30px] w-[30px] cursor-pointer select-none items-center justify-center rounded-sm border-[1px] p-[2px] text-gray-400 peer-checked/size:border-transparent peer-checked/size:bg-rose-500 peer-checked/size:text-white"
+												>L</label
+											>
+										</div>
+										<div>
+											<input
+												type="radio"
+												name="size_filter"
+												id="s4"
+												class="peer/size hidden"
+											/>
+											<label
+												for="s4"
+												class="sizing_btn flex h-[30px] w-[30px] cursor-pointer select-none items-center justify-center rounded-sm border-[1px] p-[2px] text-gray-400 peer-checked/size:border-transparent peer-checked/size:bg-rose-500 peer-checked/size:text-white"
+												>XL</label
+											>
+										</div>
+									</div>
+								</div>
+								<!-- filter-5: Color -->
+								<div class="sizing_parent space-y-3 pt-5">
+									<h2 class="text-[22px] font-medium">Color</h2>
+									<!-- sizing inputs -->
+									<div class="flex items-center space-x-2">
+										<div>
+											<input
+												type="radio"
+												name="size_filter"
+												id="s5"
+												class="peer/color hidden"
+											/>
+											<label
+												for="s5"
+												class="sizing_btn flex h-[26px] w-[26px] cursor-pointer select-none items-center justify-center rounded-sm bg-rose-500 p-[2px] peer-checked/color:ring-2 peer-checked/color:ring-rose-300 peer-checked/color:ring-offset-1"
+											></label>
+										</div>
+										<div>
+											<input
+												type="radio"
+												name="size_filter"
+												id="s6"
+												class="peer/color hidden"
+											/>
+											<label
+												for="s6"
+												class="sizing_btn flex h-[26px] w-[26px] cursor-pointer select-none items-center justify-center rounded-sm bg-blue-500 p-[2px] peer-checked/color:ring-2 peer-checked/color:ring-blue-300 peer-checked/color:ring-offset-1"
+											></label>
+										</div>
+										<div>
+											<input
+												type="radio"
+												name="size_filter"
+												id="s7"
+												class="peer/color hidden"
+											/>
+											<label
+												for="s7"
+												class="sizing_btn flex h-[26px] w-[26px] cursor-pointer select-none items-center justify-center rounded-sm bg-green-500 p-[2px] peer-checked/color:ring-2 peer-checked/color:ring-green-300 peer-checked/color:ring-offset-1"
+											></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- heading filter -->
+					<!-- container -->
+					<div class="w-full">
+						<!-- body -->
+						<div class="flex items-center justify-between">
+							<div
+								class="flex items-center gap-x-4 mob:w-full mob:justify-between"
+							>
+								<!-- mobile filter button -->
+								<div class="filter_btn hidden tab:block mob:block">
+									<div
+										class="focus_filter flex cursor-pointer select-none items-center gap-x-2 rounded-[3px] border-[1px] px-3 py-[8.1px] text-gray-600 border-gray-300"
+									>
+										<p class="capitalize">filter</p>
+										<ion-icon name="filter" class="text-lg"></ion-icon>
+									</div>
+								</div>
+								<!-- selection -->
+								<div>
+									<select
+										name="filter_sorting"
+										class="rounded-[3px] border-gray-300 text-gray-500 focus:border-rose-500 focus:ring-rose-500"
+									>
+										<option selected>Default Sorting</option>
+										<option>Price low > high</option>
+										<option>Price high > low</option>
+										<option>Latest Prduct</option>
+									</select>
+								</div>
+							</div>
+							<!-- viewing filter -->
+							<div class="mob:hidden">
+								<div class="flex gap-x-3">
+									<!-- grid view -->
+									<div>
+										<input
+											type="radio"
+											checked
+											name="view"
+											id="v1"
+											class="peer/view hidden"
+										/>
+										<label
+											for="v1"
+											class="flex h-[42px] w-[42px] cursor-pointer items-center justify-center rounded-[4px] border-[1px] p-1 text-gray-400 peer-checked/view:bg-rose-500 peer-checked/view:text-white"
+										>
+											<ion-icon name="grid" class="text-[22px]"></ion-icon>
+										</label>
+									</div>
+									<!-- list view -->
+									<div>
+										<input
+											type="radio"
+											name="view"
+											id="v2"
+											class="peer/view hidden"
+										/>
+										<label
+											for="v2"
+											class="flex h-[42px] w-[42px] cursor-pointer items-center justify-center rounded-[4px] border-[1px] p-1 text-gray-400 peer-checked/view:bg-rose-500 peer-checked/view:text-white"
+										>
+											<ion-icon name="list" class="text-[28px]"></ion-icon>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- products -->
+						<!-- container -->
+						<div class="my-8 h-screen">
+							<!-- product body -->
+							<div
+								class="grid grid-cols-3 gap-4 med:grid-cols-2 mob:grid-cols-1"
+							>
+								<!-- products -->
+								<div
+									class="rounded-md border-[1px] shadow-[2px_2px_10px_rgba(0,0,0,0.08)]"
+								>
+									<!-- product image -->
+									<img
+										src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+										class="h-[220px] w-full rounded-t-md object-cover"
+									/>
+									<!-- product details -->
+									<div class="p-4">
+										<h3 class="mb-2 text-xl font-semibold">Guyer Chair</h3>
+										<!-- price -->
+										<div class="mb-2 flex items-start gap-x-1">
+											<p class="text-xl font-semibold text-rose-500">$320.00</p>
+											<span class="text-sm text-gray-400 line-through"
+												>$300.00</span
+											>
+										</div>
+										<!-- ratings -->
+										<div class="flex items-center gap-x-2">
+											<!-- star -->
+											<div class="text-lg text-yellow-500">
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star-half"></ion-icon>
+											</div>
+											<span class="text-sm text-gray-400">(31,214)</span>
+										</div>
+									</div>
+									<!-- add to cart button -->
+									<button
+										class="w-full rounded-b-md bg-rose-500 py-2 text-lg capitalize text-white hover:bg-rose-600 active:bg-rose-400"
+									>
+										add to cart
+									</button>
+								</div>
+								<div
+									class="rounded-md border-[1px] shadow-[2px_2px_10px_rgba(0,0,0,0.08)]"
+								>
+									<!-- product image -->
+									<img
+										src="https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1109&q=80"
+										class="h-[220px] w-full rounded-t-md object-cover"
+									/>
+									<!-- product details -->
+									<div class="p-4">
+										<h3 class="mb-2 text-xl font-semibold">Guyer Chair</h3>
+										<!-- price -->
+										<div class="mb-2 flex items-start gap-x-1">
+											<p class="text-xl font-semibold text-rose-500">$45.00</p>
+											<span class="text-sm text-gray-400 line-through"
+												>$55.00</span
+											>
+										</div>
+										<!-- ratings -->
+										<div class="flex items-center gap-x-2">
+											<!-- star -->
+											<div class="text-lg text-yellow-500">
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star-half"></ion-icon>
+											</div>
+											<span class="text-sm text-gray-400">(13,214)</span>
+										</div>
+									</div>
+									<!-- add to cart button -->
+									<button
+										class="w-full rounded-b-md bg-rose-500 py-2 text-lg capitalize text-white hover:bg-rose-600 active:bg-rose-400"
+									>
+										add to cart
+									</button>
+								</div>
+								<div
+									class="rounded-md border-[1px] shadow-[2px_2px_10px_rgba(0,0,0,0.08)]"
+								>
+									<!-- product image -->
+									<img
+										src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+										class="h-[220px] w-full rounded-t-md object-cover"
+									/>
+									<!-- product details -->
+									<div class="p-4">
+										<h3 class="mb-2 text-xl font-semibold">Guyer Chair</h3>
+										<!-- price -->
+										<div class="mb-2 flex items-start gap-x-1">
+											<p class="text-xl font-semibold text-rose-500">$45.00</p>
+											<span class="text-sm text-gray-400 line-through"
+												>$55.00</span
+											>
+										</div>
+										<!-- ratings -->
+										<div class="flex items-center gap-x-2">
+											<!-- star -->
+											<div class="text-lg text-yellow-500">
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star-half"></ion-icon>
+											</div>
+											<span class="text-sm text-gray-400">(13,214)</span>
+										</div>
+									</div>
+									<!-- add to cart button -->
+									<button
+										class="w-full rounded-b-md bg-rose-500 py-2 text-lg capitalize text-white hover:bg-rose-600 active:bg-rose-400"
+									>
+										add to cart
+									</button>
+								</div>
+								<div
+									class="rounded-md border-[1px] shadow-[2px_2px_10px_rgba(0,0,0,0.08)]"
+								>
+									<!-- product image -->
+									<img
+										src="https://images.unsplash.com/photo-1661961110372-8a7682543120?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+										class="h-[220px] w-full rounded-t-md object-cover"
+									/>
+									<!-- product details -->
+									<div class="p-4">
+										<h3 class="mb-2 text-xl font-semibold">Guyer Chair</h3>
+										<!-- price -->
+										<div class="mb-2 flex items-start gap-x-1">
+											<p class="text-xl font-semibold text-rose-500">$45.00</p>
+											<span class="text-sm text-gray-400 line-through"
+												>$55.00</span
+											>
+										</div>
+										<!-- ratings -->
+										<div class="flex items-center gap-x-2">
+											<!-- star -->
+											<div class="text-lg text-yellow-500">
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star-half"></ion-icon>
+											</div>
+											<span class="text-sm text-gray-400">(13,214)</span>
+										</div>
+									</div>
+									<!-- add to cart button -->
+									<button
+										class="w-full rounded-b-md bg-rose-500 py-2 text-lg capitalize text-white hover:bg-rose-600 active:bg-rose-400"
+									>
+										add to cart
+									</button>
+								</div>
+								<div
+									class="rounded-md border-[1px] shadow-[2px_2px_10px_rgba(0,0,0,0.08)]"
+								>
+									<!-- product image -->
+									<img
+									src=https://plus.unsplash.com/premium_photo-1663013668671-d453f319544f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+									class="w-full h-[220px] rounded-t-md object-cover">
+									<!-- product details -->
+									<div class="p-4">
+										<h3 class="mb-2 text-xl font-semibold">Guyer Chair</h3>
+										<!-- price -->
+										<div class="mb-2 flex items-start gap-x-1">
+											<p class="text-xl font-semibold text-rose-500">$45.00</p>
+											<span class="text-sm text-gray-400 line-through"
+												>$55.00</span
+											>
+										</div>
+										<!-- ratings -->
+										<div class="flex items-center gap-x-2">
+											<!-- star -->
+											<div class="text-lg text-yellow-500">
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star-half"></ion-icon>
+											</div>
+											<span class="text-sm text-gray-400">(13,214)</span>
+										</div>
+									</div>
+									<!-- add to cart button -->
+									<button
+										class="w-full rounded-b-md bg-rose-500 py-2 text-lg capitalize text-white hover:bg-rose-600 active:bg-rose-400"
+									>
+										add to cart
+									</button>
+								</div>
+								<div
+									class="rounded-md border-[1px] shadow-[2px_2px_10px_rgba(0,0,0,0.08)]"
+								>
+									<!-- product image -->
+									<img
+										src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
+										class="h-[220px] w-full rounded-t-md object-cover"
+									/>
+									<!-- product details -->
+									<div class="p-4">
+										<h3 class="mb-2 text-xl font-semibold">Guyer Chair</h3>
+										<!-- price -->
+										<div class="mb-2 flex items-start gap-x-1">
+											<p class="text-xl font-semibold text-rose-500">$45.00</p>
+											<span class="text-sm text-gray-400 line-through"
+												>$55.00</span
+											>
+										</div>
+										<!-- ratings -->
+										<div class="flex items-center gap-x-2">
+											<!-- star -->
+											<div class="text-lg text-yellow-500">
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star"></ion-icon>
+												<ion-icon name="star-half"></ion-icon>
+											</div>
+											<span class="text-sm text-gray-400">(13,214)</span>
+										</div>
+									</div>
+									<!-- add to cart button -->
+									<button
+										class="w-full rounded-b-md bg-rose-500 py-2 text-lg capitalize text-white hover:bg-rose-600 active:bg-rose-400"
+									>
+										add to cart
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!----------------------------------
+			sidebar for mobile
+		----------------------------------->
+		<!-- sidebar container -->
+		<div
+			id="mobile_siderbar"
+			class="fixed right-[-100%] invisible top-0  h-screen w-[320px] select-none overflow-auto bg-white p-5 shadow-[0px_0px_0px_1000px_rgba(0,0,0,0.6)]"
+		>
+			<!-- sidebar content -->
+			<!-- filter-1: categories -->
+			<div class="space-y-3 border-b-[1px] border-b-gray-200">
+				<div class="flex items-center justify-between">
+					<h2 class="text-[22px] font-medium">Categories</h2>
+					<ion-icon name="close" class="mobile_filter_btn text-2xl"></ion-icon>
+				</div>
+				<!-- categories list -->
+				<div class="space-y-2 pb-6">
+					<div class="flex items-center gap-x-3 text-gray-500">
+						<input
+							type="checkbox"
+							name="mobile_sidebar"
+							id="l10"
+							class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+						/>
+						<label for="l10">Bedroom</label>
+						<div class="ml-auto">(15)</div>
+					</div>
+					<div class="flex items-center gap-x-3 text-gray-500">
+						<input
+							type="checkbox"
+							name="mobile_sidebar"
+							id="l11"
+							class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+						/>
+						<label for="l11">Sofa</label>
+						<div class="ml-auto">(50)</div>
+					</div>
+					<div class="flex items-center gap-x-3 text-gray-500">
+						<input
+							type="checkbox"
+							name="mobile_sidebar"
+							id="l12"
+							class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+						/>
+						<label for="l12">Gaming Chair</label>
+						<div class="ml-auto">(37)</div>
+					</div>
+					<div class="flex items-center gap-x-3 text-gray-500">
+						<input
+							type="checkbox"
+							name="mobile_sidebar"
+							id="l13"
+							class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+						/>
+						<label for="l13">Headphone</label>
+						<div class="ml-auto">(108)</div>
+					</div>
+				</div>
+			</div>
+			<!-- filter-2: Brands -->
+			<div class="space-y-3 border-b-[1px] border-b-gray-200 pt-5">
+				<h2 class="text-[22px] font-medium">Brands</h2>
+				<!-- Brands list -->
+				<div class="space-y-2 pb-6">
+					<div class="flex items-center gap-x-3 text-gray-500">
+						<input
+							type="checkbox"
+							name="mobile_sidebar"
+							id="l14"
+							class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+						/>
+						<label for="l14">Samsung</label>
+						<div class="ml-auto">(15)</div>
+					</div>
+					<div class="flex items-center gap-x-3 text-gray-500">
+						<input
+							type="checkbox"
+							name="mobile_sidebar"
+							id="l15"
+							class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+						/>
+						<label for="l15">Realme</label>
+						<div class="ml-auto">(50)</div>
+					</div>
+					<div class="flex items-center gap-x-3 text-gray-500">
+						<input
+							type="checkbox"
+							name="mobile_sidebar"
+							id="l16"
+							class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+						/>
+						<label for="l16">Asus</label>
+						<div class="ml-auto">(37)</div>
+					</div>
+					<div class="flex items-center gap-x-3 text-gray-500">
+						<input
+							type="checkbox"
+							name="mobile_sidebar"
+							id="l17"
+							class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+						/>
+						<label for="l17">MSI</label>
+						<div class="ml-auto">(108)</div>
+					</div>
+					<div class="flex items-center gap-x-3 text-gray-500">
+						<input
+							type="checkbox"
+							name="mobile_sidebar"
+							id="l18"
+							class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+						/>
+						<label for="l18">Apple</label>
+						<div class="ml-auto">(108)</div>
+					</div>
+				</div>
+			</div>
+			<!-- filter-3: Pricing -->
+			<div class="space-y-3 border-b-[1px] border-b-gray-200 pt-5">
+				<h2 class="text-[22px] font-medium">Pricing</h2>
+				<!-- Pricing forms -->
+				<div class="flex items-center gap-x-3 pb-6">
+					<input
+						type="text"
+						name="number"
+						placeholder="min"
+						class="w-full rounded-sm border-gray-400 px-[5px] py-[3px] text-sm focus:border-rose-500 focus:ring-rose-500"
+					/>
+					<span class="text-gray-500">-</span>
+					<input
+						type="text"
+						name="number"
+						placeholder="max"
+						class="w-full rounded-sm border-gray-400 px-[5px] py-[3px] text-sm focus:border-rose-500 focus:ring-rose-500"
+					/>
+				</div>
+			</div>
+			<!-- filter-3: Sizing -->
+			<div
+				class="sizing_parent space-y-3 border-b-[1px] border-b-gray-200 pt-5"
+			>
+				<h2 class="text-[22px] font-medium">Pricing</h2>
+				<!-- sizing inputs -->
+				<div class="flex items-center space-x-2 pb-6">
+					<div>
+						<input
+							type="radio"
+							name="size_filter"
+							id="s8"
+							class="peer/size hidden"
+						/>
+						<label
+							for="s8"
+							class="sizing_btn flex h-[30px] w-[30px] cursor-pointer select-none items-center justify-center rounded-sm border-[1px] p-[2px] text-gray-400 peer-checked/size:border-transparent peer-checked/size:bg-rose-500 peer-checked/size:text-white"
+							>XS</label
+						>
+					</div>
+					<div>
+						<input
+							type="radio"
+							name="size_filter"
+							id="s9"
+							class="peer/size hidden"
+						/>
+						<label
+							for="s9"
+							class="sizing_btn flex h-[30px] w-[30px] cursor-pointer select-none items-center justify-center rounded-sm border-[1px] p-[2px] text-gray-400 peer-checked/size:border-transparent peer-checked/size:bg-rose-500 peer-checked/size:text-white"
+							>M</label
+						>
+					</div>
+					<div>
+						<input
+							type="radio"
+							name="size_filter"
+							id="s10"
+							class="peer/size hidden"
+						/>
+						<label
+							for="s10"
+							class="sizing_btn flex h-[30px] w-[30px] cursor-pointer select-none items-center justify-center rounded-sm border-[1px] p-[2px] text-gray-400 peer-checked/size:border-transparent peer-checked/size:bg-rose-500 peer-checked/size:text-white"
+							>L</label
+						>
+					</div>
+					<div>
+						<input
+							type="radio"
+							name="size_filter"
+							id="s11"
+							class="peer/size hidden"
+						/>
+						<label
+							for="s11"
+							class="sizing_btn flex h-[30px] w-[30px] cursor-pointer select-none items-center justify-center rounded-sm border-[1px] p-[2px] text-gray-400 peer-checked/size:border-transparent peer-checked/size:bg-rose-500 peer-checked/size:text-white"
+							>XL</label
+						>
+					</div>
+				</div>
+			</div>
+			<!-- filter-5: Color -->
+			<div class="sizing_parent space-y-3 pt-5">
+				<h2 class="text-[22px] font-medium">Color</h2>
+				<!-- sizing inputs -->
+				<div class="flex items-center space-x-2">
+					<div>
+						<input
+							type="radio"
+							name="size_filter"
+							id="s12"
+							class="peer/color hidden"
+						/>
+						<label
+							for="s12"
+							class="sizing_btn flex h-[26px] w-[26px] cursor-pointer select-none items-center justify-center rounded-sm bg-rose-500 p-[2px] peer-checked/color:ring-2 peer-checked/color:ring-rose-300 peer-checked/color:ring-offset-1"
+						></label>
+					</div>
+					<div>
+						<input
+							type="radio"
+							name="size_filter"
+							id="s13"
+							class="peer/color hidden"
+						/>
+						<label
+							for="s13"
+							class="sizing_btn flex h-[26px] w-[26px] cursor-pointer select-none items-center justify-center rounded-sm bg-blue-500 p-[2px] peer-checked/color:ring-2 peer-checked/color:ring-blue-300 peer-checked/color:ring-offset-1"
+						></label>
+					</div>
+					<div>
+						<input
+							type="radio"
+							name="size_filter"
+							id="s14"
+							class="peer/color hidden"
+						/>
+						<label
+							for="s14"
+							class="sizing_btn flex h-[26px] w-[26px] cursor-pointer select-none items-center justify-center rounded-sm bg-green-500 p-[2px] peer-checked/color:ring-2 peer-checked/color:ring-green-300 peer-checked/color:ring-offset-1"
+						></label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- JavaScrip file -->
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>
