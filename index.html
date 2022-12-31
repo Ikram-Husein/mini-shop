@@ -599,245 +599,248 @@
 			sidebar for mobile
 		----------------------------------->
 		<!-- sidebar container -->
-		<div
-			id="mobile_siderbar"
-			class="fixed right-[-100%] invisible top-0  h-screen w-[320px] select-none overflow-auto bg-white p-5 shadow-[0px_0px_0px_1000px_rgba(0,0,0,0.6)]"
-		>
-			<!-- sidebar content -->
-			<!-- filter-1: categories -->
-			<div class="space-y-3 border-b-[1px] border-b-gray-200">
-				<div class="flex items-center justify-between">
-					<h2 class="text-[22px] font-medium">Categories</h2>
-					<ion-icon name="close" class="mobile_filter_btn text-2xl"></ion-icon>
-				</div>
-				<!-- categories list -->
-				<div class="space-y-2 pb-6">
-					<div class="flex items-center gap-x-3 text-gray-500">
-						<input
-							type="checkbox"
-							name="mobile_sidebar"
-							id="l10"
-							class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
-						/>
-						<label for="l10">Bedroom</label>
-						<div class="ml-auto">(15)</div>
-					</div>
-					<div class="flex items-center gap-x-3 text-gray-500">
-						<input
-							type="checkbox"
-							name="mobile_sidebar"
-							id="l11"
-							class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
-						/>
-						<label for="l11">Sofa</label>
-						<div class="ml-auto">(50)</div>
-					</div>
-					<div class="flex items-center gap-x-3 text-gray-500">
-						<input
-							type="checkbox"
-							name="mobile_sidebar"
-							id="l12"
-							class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
-						/>
-						<label for="l12">Gaming Chair</label>
-						<div class="ml-auto">(37)</div>
-					</div>
-					<div class="flex items-center gap-x-3 text-gray-500">
-						<input
-							type="checkbox"
-							name="mobile_sidebar"
-							id="l13"
-							class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
-						/>
-						<label for="l13">Headphone</label>
-						<div class="ml-auto">(108)</div>
-					</div>
-				</div>
+	<div
+		id="mobile_siderbar"
+		class="fixed right-[-100%] invisible top-0  h-screen w-[320px] select-none overflow-auto bg-white p-5 z-50"
+	>
+		<!-- sidebar content -->
+		<!-- filter-1: categories -->
+		<div class="space-y-3 border-b-[1px] border-b-gray-200">
+			<div class="flex items-center justify-between">
+				<h2 class="text-[22px] font-medium">Categories</h2>
+				<ion-icon name="close" class="mobile_filter_btn text-2xl"></ion-icon>
 			</div>
-			<!-- filter-2: Brands -->
-			<div class="space-y-3 border-b-[1px] border-b-gray-200 pt-5">
-				<h2 class="text-[22px] font-medium">Brands</h2>
-				<!-- Brands list -->
-				<div class="space-y-2 pb-6">
-					<div class="flex items-center gap-x-3 text-gray-500">
-						<input
-							type="checkbox"
-							name="mobile_sidebar"
-							id="l14"
-							class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
-						/>
-						<label for="l14">Samsung</label>
-						<div class="ml-auto">(15)</div>
-					</div>
-					<div class="flex items-center gap-x-3 text-gray-500">
-						<input
-							type="checkbox"
-							name="mobile_sidebar"
-							id="l15"
-							class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
-						/>
-						<label for="l15">Realme</label>
-						<div class="ml-auto">(50)</div>
-					</div>
-					<div class="flex items-center gap-x-3 text-gray-500">
-						<input
-							type="checkbox"
-							name="mobile_sidebar"
-							id="l16"
-							class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
-						/>
-						<label for="l16">Asus</label>
-						<div class="ml-auto">(37)</div>
-					</div>
-					<div class="flex items-center gap-x-3 text-gray-500">
-						<input
-							type="checkbox"
-							name="mobile_sidebar"
-							id="l17"
-							class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
-						/>
-						<label for="l17">MSI</label>
-						<div class="ml-auto">(108)</div>
-					</div>
-					<div class="flex items-center gap-x-3 text-gray-500">
-						<input
-							type="checkbox"
-							name="mobile_sidebar"
-							id="l18"
-							class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
-						/>
-						<label for="l18">Apple</label>
-						<div class="ml-auto">(108)</div>
-					</div>
-				</div>
-			</div>
-			<!-- filter-3: Pricing -->
-			<div class="space-y-3 border-b-[1px] border-b-gray-200 pt-5">
-				<h2 class="text-[22px] font-medium">Pricing</h2>
-				<!-- Pricing forms -->
-				<div class="flex items-center gap-x-3 pb-6">
+			<!-- categories list -->
+			<div class="space-y-2 pb-6">
+				<div class="flex items-center gap-x-3 text-gray-500">
 					<input
-						type="text"
-						name="number"
-						placeholder="min"
-						class="w-full rounded-sm border-gray-400 px-[5px] py-[3px] text-sm focus:border-rose-500 focus:ring-rose-500"
+						type="checkbox"
+						name="mobile_sidebar"
+						id="l10"
+						class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
 					/>
-					<span class="text-gray-500">-</span>
+					<label for="l10">Bedroom</label>
+					<div class="ml-auto">(15)</div>
+				</div>
+				<div class="flex items-center gap-x-3 text-gray-500">
 					<input
-						type="text"
-						name="number"
-						placeholder="max"
-						class="w-full rounded-sm border-gray-400 px-[5px] py-[3px] text-sm focus:border-rose-500 focus:ring-rose-500"
+						type="checkbox"
+						name="mobile_sidebar"
+						id="l11"
+						class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
 					/>
+					<label for="l11">Sofa</label>
+					<div class="ml-auto">(50)</div>
 				</div>
-			</div>
-			<!-- filter-3: Sizing -->
-			<div
-				class="sizing_parent space-y-3 border-b-[1px] border-b-gray-200 pt-5"
-			>
-				<h2 class="text-[22px] font-medium">Pricing</h2>
-				<!-- sizing inputs -->
-				<div class="flex items-center space-x-2 pb-6">
-					<div>
-						<input
-							type="radio"
-							name="size_filter"
-							id="s8"
-							class="peer/size hidden"
-						/>
-						<label
-							for="s8"
-							class="sizing_btn flex h-[30px] w-[30px] cursor-pointer select-none items-center justify-center rounded-sm border-[1px] p-[2px] text-gray-400 peer-checked/size:border-transparent peer-checked/size:bg-rose-500 peer-checked/size:text-white"
-							>XS</label
-						>
-					</div>
-					<div>
-						<input
-							type="radio"
-							name="size_filter"
-							id="s9"
-							class="peer/size hidden"
-						/>
-						<label
-							for="s9"
-							class="sizing_btn flex h-[30px] w-[30px] cursor-pointer select-none items-center justify-center rounded-sm border-[1px] p-[2px] text-gray-400 peer-checked/size:border-transparent peer-checked/size:bg-rose-500 peer-checked/size:text-white"
-							>M</label
-						>
-					</div>
-					<div>
-						<input
-							type="radio"
-							name="size_filter"
-							id="s10"
-							class="peer/size hidden"
-						/>
-						<label
-							for="s10"
-							class="sizing_btn flex h-[30px] w-[30px] cursor-pointer select-none items-center justify-center rounded-sm border-[1px] p-[2px] text-gray-400 peer-checked/size:border-transparent peer-checked/size:bg-rose-500 peer-checked/size:text-white"
-							>L</label
-						>
-					</div>
-					<div>
-						<input
-							type="radio"
-							name="size_filter"
-							id="s11"
-							class="peer/size hidden"
-						/>
-						<label
-							for="s11"
-							class="sizing_btn flex h-[30px] w-[30px] cursor-pointer select-none items-center justify-center rounded-sm border-[1px] p-[2px] text-gray-400 peer-checked/size:border-transparent peer-checked/size:bg-rose-500 peer-checked/size:text-white"
-							>XL</label
-						>
-					</div>
+				<div class="flex items-center gap-x-3 text-gray-500">
+					<input
+						type="checkbox"
+						name="mobile_sidebar"
+						id="l12"
+						class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+					/>
+					<label for="l12">Gaming Chair</label>
+					<div class="ml-auto">(37)</div>
 				</div>
-			</div>
-			<!-- filter-5: Color -->
-			<div class="sizing_parent space-y-3 pt-5">
-				<h2 class="text-[22px] font-medium">Color</h2>
-				<!-- sizing inputs -->
-				<div class="flex items-center space-x-2">
-					<div>
-						<input
-							type="radio"
-							name="size_filter"
-							id="s12"
-							class="peer/color hidden"
-						/>
-						<label
-							for="s12"
-							class="sizing_btn flex h-[26px] w-[26px] cursor-pointer select-none items-center justify-center rounded-sm bg-rose-500 p-[2px] peer-checked/color:ring-2 peer-checked/color:ring-rose-300 peer-checked/color:ring-offset-1"
-						></label>
-					</div>
-					<div>
-						<input
-							type="radio"
-							name="size_filter"
-							id="s13"
-							class="peer/color hidden"
-						/>
-						<label
-							for="s13"
-							class="sizing_btn flex h-[26px] w-[26px] cursor-pointer select-none items-center justify-center rounded-sm bg-blue-500 p-[2px] peer-checked/color:ring-2 peer-checked/color:ring-blue-300 peer-checked/color:ring-offset-1"
-						></label>
-					</div>
-					<div>
-						<input
-							type="radio"
-							name="size_filter"
-							id="s14"
-							class="peer/color hidden"
-						/>
-						<label
-							for="s14"
-							class="sizing_btn flex h-[26px] w-[26px] cursor-pointer select-none items-center justify-center rounded-sm bg-green-500 p-[2px] peer-checked/color:ring-2 peer-checked/color:ring-green-300 peer-checked/color:ring-offset-1"
-						></label>
-					</div>
+				<div class="flex items-center gap-x-3 text-gray-500">
+					<input
+						type="checkbox"
+						name="mobile_sidebar"
+						id="l13"
+						class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+					/>
+					<label for="l13">Headphone</label>
+					<div class="ml-auto">(108)</div>
 				</div>
 			</div>
 		</div>
+		<!-- filter-2: Brands -->
+		<div class="space-y-3 border-b-[1px] border-b-gray-200 pt-5">
+			<h2 class="text-[22px] font-medium">Brands</h2>
+			<!-- Brands list -->
+			<div class="space-y-2 pb-6">
+				<div class="flex items-center gap-x-3 text-gray-500">
+					<input
+						type="checkbox"
+						name="mobile_sidebar"
+						id="l14"
+						class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+					/>
+					<label for="l14">Samsung</label>
+					<div class="ml-auto">(15)</div>
+				</div>
+				<div class="flex items-center gap-x-3 text-gray-500">
+					<input
+						type="checkbox"
+						name="mobile_sidebar"
+						id="l15"
+						class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+					/>
+					<label for="l15">Realme</label>
+					<div class="ml-auto">(50)</div>
+				</div>
+				<div class="flex items-center gap-x-3 text-gray-500">
+					<input
+						type="checkbox"
+						name="mobile_sidebar"
+						id="l16"
+						class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+					/>
+					<label for="l16">Asus</label>
+					<div class="ml-auto">(37)</div>
+				</div>
+				<div class="flex items-center gap-x-3 text-gray-500">
+					<input
+						type="checkbox"
+						name="mobile_sidebar"
+						id="l17"
+						class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+					/>
+					<label for="l17">MSI</label>
+					<div class="ml-auto">(108)</div>
+				</div>
+				<div class="flex items-center gap-x-3 text-gray-500">
+					<input
+						type="checkbox"
+						name="mobile_sidebar"
+						id="l18"
+						class="rounded-[3px] border-gray-400 text-rose-500 focus:ring-0"
+					/>
+					<label for="l18">Apple</label>
+					<div class="ml-auto">(108)</div>
+				</div>
+			</div>
+		</div>
+		<!-- filter-3: Pricing -->
+		<div class="space-y-3 border-b-[1px] border-b-gray-200 pt-5">
+			<h2 class="text-[22px] font-medium">Pricing</h2>
+			<!-- Pricing forms -->
+			<div class="flex items-center gap-x-3 pb-6">
+				<input
+					type="text"
+					name="number"
+					placeholder="min"
+					class="w-full rounded-sm border-gray-400 px-[5px] py-[3px] text-sm focus:border-rose-500 focus:ring-rose-500"
+				/>
+				<span class="text-gray-500">-</span>
+				<input
+					type="text"
+					name="number"
+					placeholder="max"
+					class="w-full rounded-sm border-gray-400 px-[5px] py-[3px] text-sm focus:border-rose-500 focus:ring-rose-500"
+				/>
+			</div>
+		</div>
+		<!-- filter-3: Sizing -->
+		<div
+			class="sizing_parent space-y-3 border-b-[1px] border-b-gray-200 pt-5"
+		>
+			<h2 class="text-[22px] font-medium">Pricing</h2>
+			<!-- sizing inputs -->
+			<div class="flex items-center space-x-2 pb-6">
+				<div>
+					<input
+						type="radio"
+						name="size_filter"
+						id="s8"
+						class="peer/size hidden"
+					/>
+					<label
+						for="s8"
+						class="sizing_btn flex h-[30px] w-[30px] cursor-pointer select-none items-center justify-center rounded-sm border-[1px] p-[2px] text-gray-400 peer-checked/size:border-transparent peer-checked/size:bg-rose-500 peer-checked/size:text-white"
+						>XS</label
+					>
+				</div>
+				<div>
+					<input
+						type="radio"
+						name="size_filter"
+						id="s9"
+						class="peer/size hidden"
+					/>
+					<label
+						for="s9"
+						class="sizing_btn flex h-[30px] w-[30px] cursor-pointer select-none items-center justify-center rounded-sm border-[1px] p-[2px] text-gray-400 peer-checked/size:border-transparent peer-checked/size:bg-rose-500 peer-checked/size:text-white"
+						>M</label
+					>
+				</div>
+				<div>
+					<input
+						type="radio"
+						name="size_filter"
+						id="s10"
+						class="peer/size hidden"
+					/>
+					<label
+						for="s10"
+						class="sizing_btn flex h-[30px] w-[30px] cursor-pointer select-none items-center justify-center rounded-sm border-[1px] p-[2px] text-gray-400 peer-checked/size:border-transparent peer-checked/size:bg-rose-500 peer-checked/size:text-white"
+						>L</label
+					>
+				</div>
+				<div>
+					<input
+						type="radio"
+						name="size_filter"
+						id="s11"
+						class="peer/size hidden"
+					/>
+					<label
+						for="s11"
+						class="sizing_btn flex h-[30px] w-[30px] cursor-pointer select-none items-center justify-center rounded-sm border-[1px] p-[2px] text-gray-400 peer-checked/size:border-transparent peer-checked/size:bg-rose-500 peer-checked/size:text-white"
+						>XL</label
+					>
+				</div>
+			</div>
+		</div>
+		<!-- filter-5: Color -->
+		<div class="sizing_parent space-y-3 pt-5">
+			<h2 class="text-[22px] font-medium">Color</h2>
+			<!-- sizing inputs -->
+			<div class="flex items-center space-x-2">
+				<div>
+					<input
+						type="radio"
+						name="size_filter"
+						id="s12"
+						class="peer/color hidden"
+					/>
+					<label
+						for="s12"
+						class="sizing_btn flex h-[26px] w-[26px] cursor-pointer select-none items-center justify-center rounded-sm bg-rose-500 p-[2px] peer-checked/color:ring-2 peer-checked/color:ring-rose-300 peer-checked/color:ring-offset-1"
+					></label>
+				</div>
+				<div>
+					<input
+						type="radio"
+						name="size_filter"
+						id="s13"
+						class="peer/color hidden"
+					/>
+					<label
+						for="s13"
+						class="sizing_btn flex h-[26px] w-[26px] cursor-pointer select-none items-center justify-center rounded-sm bg-blue-500 p-[2px] peer-checked/color:ring-2 peer-checked/color:ring-blue-300 peer-checked/color:ring-offset-1"
+					></label>
+				</div>
+				<div>
+					<input
+						type="radio"
+						name="size_filter"
+						id="s14"
+						class="peer/color hidden"
+					/>
+					<label
+						for="s14"
+						class="sizing_btn flex h-[26px] w-[26px] cursor-pointer select-none items-center justify-center rounded-sm bg-green-500 p-[2px] peer-checked/color:ring-2 peer-checked/color:ring-green-300 peer-checked/color:ring-offset-1"
+					></label>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!-- overlay -->
+		<div class="w-full h-full bg-black/60 absolute inset-0 invisible" id="overlay"></div>
 
-		<!-- JavaScrip file -->
+
+		<!-- JavaScript file -->
 		<script src="assets/js/script.js"></script>
 	</body>
 </html>
