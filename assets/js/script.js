@@ -26,4 +26,5 @@ overlay.addEventListener('click', () => {
 	mobile_siderbar.style.transition = "0.2s";
 	mobile_siderbar.style.right = "-100%";
 	overlay.style.visibility = "hidden";
+	focus_filter.style.borderColor = "#d1d5db";
 })
